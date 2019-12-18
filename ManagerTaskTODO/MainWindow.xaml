@@ -1,0 +1,28 @@
+﻿<Window x:Class="ManagerTaskTODO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ManagerTaskTODO"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="350" >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/page.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="319*"/>
+            <RowDefinition Height="55*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="287*"/>
+            <ColumnDefinition Width="24*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="stackPanelNoteChangeButtons" Grid.Column="1" Grid.Row="1">
+            <Button Content="Создать заметку" Grid.Column="1" HorizontalAlignment="Left" Margin="37,211,0,0" Grid.Row="1" VerticalAlignment="Top" Width="211" Height="52" FontSize="20" Background="#FF9BA85E" FontWeight="Bold"/>
+            <Button Content="Посмотреть заметки" Grid.Column="1" HorizontalAlignment="Left" Margin="37,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="211" Height="52" FontSize="18" Background="#FF9BA85E" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</Window>
