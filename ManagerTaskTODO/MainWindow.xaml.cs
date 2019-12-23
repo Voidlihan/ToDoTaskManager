@@ -24,5 +24,11 @@ namespace ManagerTaskTODO
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CreateNote createNote = new CreateNote();
+            createNote.ShowDialog();
+        }
     }
 }

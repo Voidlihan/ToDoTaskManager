@@ -7,9 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="350" >
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="Images/page.jpg"/>
-        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="45*"/>
             <RowDefinition Height="319*"/>
@@ -21,8 +18,7 @@
             <ColumnDefinition Width="24*"/>
         </Grid.ColumnDefinitions>
         <StackPanel x:Name="stackPanelNoteChangeButtons" Grid.Column="1" Grid.Row="1">
-            <Button Content="Создать заметку" Grid.Column="1" HorizontalAlignment="Left" Margin="37,211,0,0" Grid.Row="1" VerticalAlignment="Top" Width="211" Height="52" FontSize="20" Background="#FF9BA85E" FontWeight="Bold"/>
-            <Button Content="Посмотреть заметки" Grid.Column="1" HorizontalAlignment="Left" Margin="37,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="211" Height="52" FontSize="18" Background="#FF9BA85E" FontWeight="Bold"/>
+            <Button Content="К заметкам" Grid.Column="1" HorizontalAlignment="Left" Margin="37,150,0,0" Grid.Row="1" VerticalAlignment="Top" Width="211" Height="52" FontSize="20" Background="#FF9BA85E" FontWeight="Bold" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Window>
